@@ -1,0 +1,44 @@
+body {
+    background: #EEE;
+    font: 3rem Impact;
+    text-transform: uppercase;
+}
+.anim-shape {
+    -webkit-transform-origin: 0x 150px;
+    -ms-transform-origin: 0x 150px;
+    transform-origin: 0x 150px;
+    -webkit-transform: scale(0, 1) translate(0, 0);
+    -ms-transform: scale(0, 1) translate(0, 0);
+    transform: scale(0, 1) translate(0, 0);
+    -webkit-animation: moving-panel 3s infinite alternate;
+    animation: moving-panel 3s infinite alternate;
+}
+.colortext .anim-shape:nth-child(1) {
+    fill: #0E1826;
+}
+.colortext .anim-shape:nth-child(2) {
+    fill: #166973;
+}
+.colortext .anim-shape:nth-child(3) {
+    fill: #65BFA6;
+}
+.colortext .anim-shape:nth-child(4) {
+    fill: #F2CD5C;
+}
+.colortext .anim-shape:nth-child(5) {
+    fill: #F26444;
+}
+
+@-webkit-keyframes moving-panel {
+    100% {
+        -webkit-transform: scale(1, 1) translate(20px, 0);
+        transform: scale(1, 1) translate(20px, 0);
+    }
+}
+
+@keyframes moving-panel {
+    100% {
+        -webkit-transform: scale(1, 1) translate(20px, 0);
+        transform: scale(1, 1) translate(20px, 0);
+    }
+}
